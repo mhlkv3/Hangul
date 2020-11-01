@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'PT Sans', sans-serif;
+  margin-bottom: 80px;
+}
+
+a { color: inherit;
+}
+
+h1, h2, h3, h4, p, ul, blockquote {
+  width: 700px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+}
+
+
+
+
+h1 + p + p {
+  margin-top: 30px;
+}
+
+
+
+h2 + p, h2 + blockquote {
+  margin-top: 7px;
+}
+
+
+
+h3 + p, h3 + blockquote {
+  margin-top: 6px;
+}
+
+
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+
+blockquote::before {
+  content: "";
+  background: black;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  display: block;
+  left: -17px;
+  top: 0;
+
+}
+
+img {
+  display: block;
+  width: 700px;
+  margin: 79px auto 0;
+}
+
+img + h2 {
+  margin-top: 79px;
+}
+
+img + p, img + blockquote, img + ul {
+  margin-top: 77px;
+}
+
+h2 + img {
+  margin-top: 82px;
+}
+
+h3 + img {
+  margin-top: 81px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+.last {
+  margin-bottom: 80px;
+}
+
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  border-bottom: .5px solid #aaa;
+  box-shadow: 0 2px 4px rgba(0,0,0,.3);
+
+}
+
+.menubar a {
+  height: 20px;
+  color: #aaa;
+  text-decoration: none;
+
+}
+
+.menubar img {
+  height: 100%;
+  width: auto;
+  margin-top: 0px;
+}
